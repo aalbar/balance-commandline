@@ -1,5 +1,4 @@
 # balance-commandline
-
 Expectations
 
 ● Show how you work and how you think
@@ -52,25 +51,25 @@ Example
 
 >>EXPENSE 2020/10/11 lunch 25
 
->>PRINT YEAR 2020 
+>>PRINT YEAR 2020
 
 470
 
->>PRINT YEAR 2021 
+>>PRINT YEAR 2021
 
 0
 
 >>INCOME 2020/10/25 stock-dividend 40
 
->>PRINT MONTH 2020/11 
+>>PRINT MONTH 2020/11
 
 0
 
->>PRINT MONTH 2020/10 
+>>PRINT MONTH 2020/10
 
 10
 
->>PRINT DAY 2020/10/11 
+>>PRINT DAY 2020/10/11
 
 -25
 
@@ -82,11 +81,11 @@ EXPENSE <date> <description> <amount>
 
 INCOME <date> <description> <amount>
 
-PRINT DAY <year>/<month>/<day> 
+PRINT DAY <year>/<month>/<day>
 
-PRINT MONTH <year>/<month> 
+PRINT MONTH <year>/<month>
 
-PRINT YEAR <year> 
+PRINT YEAR <year>
 
 EXIT
 
