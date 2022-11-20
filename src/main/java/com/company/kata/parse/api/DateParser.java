@@ -1,6 +1,6 @@
 package com.company.kata.parse.api;
 
-import com.company.kata.model.PeriodType;
+import com.company.kata.model.type.PeriodType;
 
 import java.time.LocalDate;
 

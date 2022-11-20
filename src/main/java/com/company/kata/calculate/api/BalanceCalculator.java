@@ -1,7 +1,7 @@
 package com.company.kata.calculate.api;
 
 import com.company.kata.model.Balance;
-import com.company.kata.model.PeriodType;
+import com.company.kata.model.type.PeriodType;
 
 import java.time.LocalDate;
 

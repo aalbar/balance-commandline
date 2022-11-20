@@ -1,6 +1,6 @@
 package com.company.kata.parse.business;
 
-import com.company.kata.model.CommandType;
+import com.company.kata.model.type.CommandType;
 import com.company.kata.parse.api.CommandTypeParser;
 
 /**

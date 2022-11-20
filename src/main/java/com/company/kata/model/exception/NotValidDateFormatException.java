@@ -1,4 +1,4 @@
-package com.company.kata.model;
+package com.company.kata.model.exception;
 
 /**
  * The type Not valid date format.

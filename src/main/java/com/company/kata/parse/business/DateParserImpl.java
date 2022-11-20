@@ -1,7 +1,7 @@
 package com.company.kata.parse.business;
 
-import com.company.kata.model.NotValidDateFormatException;
-import com.company.kata.model.PeriodType;
+import com.company.kata.model.exception.NotValidDateFormatException;
+import com.company.kata.model.type.PeriodType;
 import com.company.kata.parse.api.DateParser;
 
 import java.time.LocalDate;
@@ -24,14 +24,15 @@ public class DateParserImpl implements DateParser {
     @Override
     public LocalDate parse(String text, PeriodType periodType) {
         try {
-            if (periodType.equals(PeriodType.DAY)) {
-                return LocalDate.parse(text, dateFormatter);
-            } else if (periodType.equals(PeriodType.MONTH)) {
-                return LocalDate.of(Integer.parseInt(text.substring(0, 4)), Integer.parseInt(text.substring(5, 7)), 1);
-            } else {
-                return LocalDate.of(Integer.parseInt(text), 1, 1);
-            }
-        } catch (NumberFormatException | DateTimeParseException e) {
+            return switch (periodType) {
+                case DAY -> LocalDate.parse(text, dateFormatter);
+                case MONTH ->
+                        LocalDate.of(Integer.parseInt(text.substring(0, 4)), Integer.parseInt(text.substring(5, 7)), 1);
+                case YEAR -> LocalDate.of(Integer.parseInt(text), 1, 1);
+                default -> throw new NotValidDateFormatException();
+            };
+        } catch (NumberFormatException | DateTimeParseException |
+                 IndexOutOfBoundsException e) {
             throw new NotValidDateFormatException();
         }
 

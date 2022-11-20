@@ -1,6 +1,6 @@
 package com.company.kata.parse.business;
 
-import com.company.kata.model.PeriodType;
+import com.company.kata.model.type.PeriodType;
 import com.company.kata.parse.api.PeriodTypeParser;
 
 /**

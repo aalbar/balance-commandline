@@ -1,6 +1,7 @@
 package com.company.kata.model;
 
 
+import com.company.kata.model.type.TransactionType;
 import lombok.Builder;
 import lombok.Getter;
 

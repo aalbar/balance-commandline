@@ -1,4 +1,4 @@
-package com.company.kata.model;
+package com.company.kata.model.type;
 
 public enum CommandType {
 

@@ -1,11 +1,11 @@
-package com.company.kata.parse.api;
+package com.company.kata.run.api;
 
 import com.company.kata.model.Balance;
 
 /**
  * The interface Command parser.
  */
-public interface CommandParser {
+public interface CommandRunner {
 
     /**
      * Parse string.
@@ -14,5 +14,5 @@ public interface CommandParser {
      * @param balance the balance
      * @return the string
      */
-    String parse(String line, Balance balance);
+    String run(String line, Balance balance);
 }
